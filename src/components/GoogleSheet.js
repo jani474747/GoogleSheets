@@ -106,7 +106,7 @@ function GoogleSheet() {
                             value={country}
                         />
                     </Grid>
-                    <Grid>
+                    {/* <Grid>
                         
                         <TextField sx={{ mt: 3, width: '30ch' }} type='text' required
                             onChange={(e) => setStatus(e.target.value)}
@@ -120,7 +120,7 @@ function GoogleSheet() {
                             value={status}
                             disabled={ !name && !email && !mobile && !address && !country ? 'Yes' : 'No' }  
                         />
-                    </Grid>
+                    </Grid> */}
                      
                 </Grid>
                 <Button type='submit' sx={{ mt: 1, ml: 1.5, p: 1, width: '30ch' }}>Submit</Button>
