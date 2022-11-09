@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
-import Data from './Data'
-import { Box, Button, Grid, TextField, FormControl, Typography } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography } from '@mui/material';
 
 function GoogleSheet() {
 
@@ -66,42 +65,42 @@ function GoogleSheet() {
     }
 
     return (
-        <Box sx={{ mx: 'auto', width: 250 }}>
+        <Box sx={{mt : 10, mx: 'auto', width: 250 }}>
 
             <form autoComplete="off" className='form-group'
                 onSubmit={handleSubmit}>
                 <Grid>
                     <Grid>
                         <Typography color='skyblue'>Name</Typography>
-                        <TextField sx={{ width: '30ch' }} type='text' required
+                        <TextField sx={{ width: '30ch' }} type='text'
                             onChange={(e) => setName(e.target.value)}
                             value={name}
                         />
                     </Grid>
                     <Grid>
                         <Typography color='skyblue'>Email</Typography>
-                        <TextField sx={{ width: '30ch' }} type='text' required
+                        <TextField sx={{ width: '30ch' }} type='text'
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
                         />
                     </Grid>
                     <Grid>
                         <Typography color='skyblue'>Mobile</Typography>
-                        <TextField sx={{ width: '30ch' }} type='text' required
+                        <TextField sx={{ width: '30ch' }} type='text'
                             onChange={(e) => setMobile(e.target.value)}
                             value={mobile}
                         />
                     </Grid>
                     <Grid>
                         <Typography color='skyblue'>Address</Typography>
-                        <TextField sx={{ width: '30ch' }} type='text' required
+                        <TextField sx={{ width: '30ch' }} type='text'
                             onChange={(e) => setAddress(e.target.value)}
                             value={address}
                         />
                     </Grid>
                     <Grid>
                         <Typography color='skyblue'>Country</Typography>
-                        <TextField sx={{ width: '30ch' }} type='text' required
+                        <TextField sx={{ width: '30ch' }} type='text'
                             onChange={(e) => setCountry(e.target.value)}
                             value={country}
                         />
